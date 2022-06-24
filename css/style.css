@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;600;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 body{
@@ -12,6 +12,7 @@ body{
     line-height: 1.6;
     font-family: 'Merriweather Sans', sans-serif;
     background-color: #EDF3F9;
+    overflow: hidden;
 }
 
 ul{
@@ -26,8 +27,14 @@ a{
     margin: 0 auto;
 }
 
+button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
 header{
     background-color: #fff;
+    position: relative;
 }
 header .header-top{
     height: 31px;
@@ -35,6 +42,7 @@ header .header-top{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    overflow: hidden;
 }
 
 header .header-top ul{
@@ -61,7 +69,50 @@ header .header-top ul li a i{
     padding: 5px 0;
 }
 
+header .header-top ul li:first-child,
+header .header-top ul li:nth-child(2){
+    display: none;
+}
 
+
+header .header-top ul li:nth-child(9){
+    position: relative;
+}
+
+
+header .header-top ul li .form-wrapper{
+    height: 50px;
+    position: absolute;
+    right: 0;
+    background-color: #F9F9F9;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: none;
+    align-items: center;
+}
+
+header .header-top ul li .form-wrapper form{
+    position: relative;
+}
+header .header-top ul li .form-wrapper input,
+header .header-top ul li .form-wrapper form button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 1.1rem 0.5rem;
+}
+header .header-top ul li .form-wrapper form button{
+    width: 40px;
+    height: 100%;
+    color: #44667C;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
 
 header .header-bottom{
     display: flex;
@@ -78,11 +129,18 @@ header .header-bottom ul{
     justify-content: flex-end;
 }
 header .header-bottom ul li{
-    /* position: relative; */
+    position: relative;
     margin-right: 1rem;
 }
-header .header-bottom ul li:last-child{
+header .header-bottom ul li:nth-child(6){
     margin-right: 0;
+}
+
+header .header-bottom ul li:nth-child(7),
+header .header-bottom ul li:nth-child(8),
+header .header-bottom ul li:nth-child(9),
+header .header-bottom ul li:nth-child(10){
+    display: none;
 }
 
 header .header-bottom ul a{
@@ -91,16 +149,20 @@ header .header-bottom ul a{
     font-size: 0.8rem;
 }
 
-header .header-bottom ul li a i{
+header .header-bottom ul li i{
     margin-left: 3px;
+    font-size: 0.6rem;
 }
 
-header .header-bottom ul li a i:last-child{
+header .header-bottom ul li i:last-child{
     font-size: unset;
 }
 
+header .header-bottom ul li .fa-square-arrow-up-right{
+    display: none;
+}
 
-/* Nested Dropdown */
+/* Nested Dropdown menu */
 header .header-bottom ul li ul{
     display: none;
     width: max-content;
@@ -111,7 +173,7 @@ header .header-bottom ul li ul{
     -moz-box-shadow: 0px 7px 14px -1px rgba(0,0,0,0.53);
     border-radius: 2px;
     position: absolute;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 header .header-bottom ul li ul li{

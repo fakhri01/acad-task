@@ -1,3 +1,192 @@
-body{
-    background-color: red;
+.active{
+    background-color: #d8770e;
+}
+
+header .header-top{
+    height: 50px!important;
+}
+header .header-top ul{
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    overscroll-behavior: contain;
+}
+
+.slide-headertop-forwards{
+    transform: translateX(300px);
+    transition: transform 0.7s;
+}
+
+.slide-headertop-backwards{
+    transform: translateX(0px);
+    transition: transform 0.7s;
+}
+
+header .header-top ul li{
+    display: none;
+}
+
+header .header-top ul li:first-child,
+header .header-top ul li:nth-child(2),
+header .header-top ul li:nth-child(11)
+{
+    display: block!important;
+}
+
+header .header-top ul li:first-child ,
+header .header-top ul li:nth-child(11) {
+    width: 40px;
+}
+
+header .header-top a:hover{
+    background-color: transparent!important;
+}
+
+header .header-top ul li .form-wrapper{
+    height: 60px!important;
+    max-width: 500px;
+    width: 100%;
+    justify-content: space-between!important;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+header .header-top ul li .form-wrapper form{
+    width: 100%;
+}
+
+header .header-top ul li .form-wrapper form input{
+    padding: 1.5rem 0.5rem;
+    font-size: 1.2rem;
+}
+
+header .header-top ul li .form-wrapper form button{
+    color: transparent;
+}
+
+header .header-top ul li .form-wrapper form button:hover{
+    background-color: rgb(60, 75, 153);
+    color: #fff;
+}
+
+header .header-bottom{
+    max-width: 300px;
+    width: 100%;
+    height: 100vh;
+    background-color: #446880;
+    box-shadow: -10px 0px 20px -7px rgba(0, 0, 0, 0.507) inset;
+    -webkit-box-shadow: -10px 0px 20px -7px rgba(0,0,0,0.507) inset;
+    -moz-box-shadow: -10px 0px 20px -7px rgba(0,0,0,0.507) inset;
+    overflow-y: auto;
+    align-items: flex-start!important;
+    justify-content: flex-start!important;
+    padding: 0!important;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+.side-nav-slide-backwards{
+    transform: translateX(-300px);
+    transition: transform 0.7s;
+}
+
+.side-nav-slide-forwards{
+    transform: translateX(0);
+    transition: transform 0.7s; 
+}
+
+
+header nav{
+    width: 100%;
+}
+
+header .header-bottom ul{
+    flex-direction: column;
+}
+
+header .header-bottom .logo{
+    display: none;
+}
+
+header .header-bottom ul li{
+    width: 100%;
+    margin: 0!important;
+    cursor: pointer;
+}
+
+header .header-bottom ul li:nth-child(7),
+header .header-bottom ul li:nth-child(8),
+header .header-bottom ul li:nth-child(9),
+header .header-bottom ul li:nth-child(10){
+    display: inline-block!important;
+}
+header .header-bottom ul li:nth-child(6) a{
+    float: unset;
+    padding-left: 0;
+}
+
+header .header-bottom ul li ul{
+    width: 100%!important;
+    position: unset!important;
+}
+
+header .header-bottom ul li a{
+    color: #fff;
+    float: left;
+    font-size: .9rem;
+    padding: 10px 0 10px 25px;
+}
+
+header .header-bottom ul li .fa-arrow-up-right-from-square{
+    display: none;
+}
+
+header .header-bottom ul li i{
+    float: right;
+    color: #fff;
+    font-size: 0.8rem!important;
+    padding: 0.7rem;
+}
+header .header-bottom ul li i:hover{
+    background-color: #d8770e;
+    cursor: pointer;
+}
+
+header .header-bottom ul li .fa-square-arrow-up-right{
+    display: inline!important;
+    color: #fff;
+    font-size: 1.3rem!important;
+    float: unset!important;
+    padding-left: 25px;
+}
+
+
+header .header-bottom ul li .fa-square-arrow-up-right:hover{
+    background-color: transparent;
+}
+
+/* Nested Dropdown menu */
+
+header .header-bottom ul li ul{
+    width: 100%!important;
+    height: max-content;
+    background-color: #446880!important;
+    box-shadow: unset!important;
+    display: block;
+}
+
+header .header-bottom ul li ul li{
+    width: 100%;
+    display: inline-block!important;
+    padding: 0!important;
+}
+header .header-bottom ul li ul  li a{
+    color: #fff;
+}
+
+header .header-bottom ul li ul li a:hover{
+    color: #fff;
+}
+header .header-bottom ul li ul li:nth-child(6){
+    padding-left: 25px!important;
 }

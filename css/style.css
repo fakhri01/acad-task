@@ -37,12 +37,12 @@ header{
     position: relative;
 }
 header .header-top{
-    height: 31px;
+    height: 35px;
     background-color: #44667C;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    overflow: hidden;
+    overscroll-behavior: contain;
 }
 
 header .header-top ul{
@@ -66,7 +66,7 @@ header .header-top a:hover{
 
 header .header-top ul li a i{
     font-size: 1rem!important;
-    padding: 5px 0;
+    padding: 5.1px 0;
 }
 
 header .header-top ul li:first-child,
@@ -81,14 +81,18 @@ header .header-top ul li:nth-child(9){
 
 
 header .header-top ul li .form-wrapper{
+    display: none;
+    align-items: center;
     height: 50px;
+    transform: translateY(50%);
+    opacity: 0;
     position: absolute;
     right: 0;
     background-color: #F9F9F9;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    display: none;
-    align-items: center;
 }
+
+
 
 header .header-top ul li .form-wrapper form{
     position: relative;
@@ -130,6 +134,7 @@ header .header-bottom ul{
 }
 header .header-bottom ul li{
     position: relative;
+    cursor: pointer;
     margin-right: 1rem;
 }
 header .header-bottom ul li:nth-child(6){
@@ -173,6 +178,8 @@ header .header-bottom ul li ul{
     -moz-box-shadow: 0px 7px 14px -1px rgba(0,0,0,0.53);
     border-radius: 2px;
     position: absolute;
+    transform: translateY(20%);
+    opacity: 0;
     margin-top: 0.5rem;
 }
 
@@ -189,4 +196,32 @@ header .header-bottom ul li ul a{
 
 header .header-bottom ul li ul a:hover{
     color: #d8770e;
+}
+
+
+
+.fadeInAnimation{
+    animation: fadeIn 0.7s forwards;
+}
+
+@keyframes fadeIn{
+    100%{ 
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.fadeOut{
+    animation: fadeOut 0.7s forwards;
+}
+
+@keyframes fadeOut{
+    0%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100%{ 
+        transform: translateY(100%);
+        opacity: 0;
+    }
 }

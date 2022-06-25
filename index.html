@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <link
       rel="stylesheet"
       media="screen and (max-width: 960px)"
@@ -23,7 +23,7 @@
         <div class="header-top">
           <ul id="header-top" class="slide-headertop-backwards">
             <li id="slide-side-nav" onclick="closeSideNav()">
-              <a href="#"><i class="fa-solid fa-bars"></i></a>
+              <a href="#"><i id="icon" class="fa-solid fa-bars"></i></a>
             </li>
             <li>
               <a href="#"><img src="img/mobile-logo.png" alt="Acad Logo" /></a>
@@ -43,10 +43,10 @@
               <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
             </li>
             <li>
-              <a id="toggleSearchInput" href="#"
+              <a  id="toggleSearchInput" href="#"
                 ><i class="fa-solid fa-magnifying-glass"></i
               ></a>
-              <div id="SearchInput" class="form-wrapper">
+              <div id="SearchInput" class="form-wrapper fadeOut">
                 <form>
                   <input type="search" placeholder="Search..." />
                   <button type="submit">
@@ -68,7 +68,7 @@
               <li data-toggle="dropdown" data-target="dropdown-menu">
                 <a href="#">About </i></a>
                 <i class="fa-solid fa-chevron-down"></i>
-                <ul class="dropdown-menu" id="dropdown-menu">
+                <ul class="dropdown-menu fadeInAnimation" id="dropdown-menu">
                   <li><a href="#">75h Anniversary Year</a></li>
                   <li><a href="#">Who We Are</a></li>
                   <li><a href="#">Mission, Vision, Values</a></li>
@@ -84,7 +84,7 @@
                 <a href="#"
                   >Membership </a><i class="fa-solid fa-chevron-down"></i
                     >
-                <ul class="dropdown-menu" id="dropdown-menu2">
+                <ul class="dropdown-menu  fadeInAnimation" id="dropdown-menu2">
                   <li><a href="#">Member Benefits</a></li>
                   <li><a href="#">Join ACAD</a></li>
                   <li><a href="#">Get Involved</a></li>
@@ -94,7 +94,7 @@
               <li data-toggle="dropdown" data-target="dropdown-menu3">
                 <a href="#">Meetings & Events</a>
                 <i class="fa-solid fa-chevron-down"></i>
-                <ul class="dropdown-menu" id="dropdown-menu3">
+                <ul class="dropdown-menu  fadeInAnimation" id="dropdown-menu3">
                   <li><a href="#">Annual Meeting</a></li>
                   <li><a href="#">Conferences</a></li>
                   <li><a href="#">Deans' Instute</a></li>
@@ -103,7 +103,7 @@
               <li data-toggle="dropdown" data-target="dropdown-menu4">
                 <a href="#">Resources</a>
                 <i class="fa-solid fa-chevron-down"></i>
-                <ul class="dropdown-menu" id="dropdown-menu4">
+                <ul class="dropdown-menu  fadeInAnimation" id="dropdown-menu4">
                   <li><a href="#">ACAD Reading List</a></li>
                   <li><a href="#">Explore Resources</a></li>
                   <li>

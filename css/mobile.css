@@ -1,5 +1,6 @@
 .active{
-    background-color: #d8770e;
+    background-color: #d8770e!important;
+    height: auto;
 }
 
 header .header-top{
@@ -9,7 +10,6 @@ header .header-top ul{
     width: 100%;
     height: 100%;
     justify-content: space-between;
-    overscroll-behavior: contain;
 }
 
 .slide-headertop-forwards{
@@ -51,17 +51,20 @@ header .header-top ul li .form-wrapper{
     overflow: hidden;
 }
 
+
 header .header-top ul li .form-wrapper form{
     width: 100%;
 }
 
 header .header-top ul li .form-wrapper form input{
+    width: 100%;
     padding: 1.5rem 0.5rem;
     font-size: 1.2rem;
 }
 
 header .header-top ul li .form-wrapper form button{
     color: transparent;
+    padding: 2rem 1rem!important;
 }
 
 header .header-top ul li .form-wrapper form button:hover{
@@ -74,9 +77,9 @@ header .header-bottom{
     width: 100%;
     height: 100vh;
     background-color: #446880;
-    box-shadow: -10px 0px 20px -7px rgba(0, 0, 0, 0.507) inset;
-    -webkit-box-shadow: -10px 0px 20px -7px rgba(0,0,0,0.507) inset;
-    -moz-box-shadow: -10px 0px 20px -7px rgba(0,0,0,0.507) inset;
+    box-shadow: -8px 0px 20px -5px rgba(0, 0, 0, 0.507) inset;
+    -webkit-box-shadow: -8px 0px 20px -5px rgba(0,0,0,0.507) inset;
+    -moz-box-shadow: -8px 0px 20px -5px rgba(0,0,0,0.507) inset;
     overflow-y: auto;
     align-items: flex-start!important;
     justify-content: flex-start!important;
@@ -114,6 +117,10 @@ header .header-bottom ul li{
     cursor: pointer;
 }
 
+header .header-bottom ul li:first-child{
+    box-shadow: -5px 0 20px -7px  rgba(0, 0, 0, 0.507) inset;
+}
+
 header .header-bottom ul li:nth-child(7),
 header .header-bottom ul li:nth-child(8),
 header .header-bottom ul li:nth-child(9),
@@ -128,6 +135,7 @@ header .header-bottom ul li:nth-child(6) a{
 header .header-bottom ul li ul{
     width: 100%!important;
     position: unset!important;
+    margin-top: 45px!important;
 }
 
 header .header-bottom ul li a{
@@ -144,8 +152,8 @@ header .header-bottom ul li .fa-arrow-up-right-from-square{
 header .header-bottom ul li i{
     float: right;
     color: #fff;
-    font-size: 0.8rem!important;
-    padding: 0.7rem;
+    font-size: 0.7rem!important;
+    padding: 16px 20px;
 }
 header .header-bottom ul li i:hover{
     background-color: #d8770e;
@@ -172,6 +180,10 @@ header .header-bottom ul li ul{
     height: max-content;
     background-color: #446880!important;
     box-shadow: unset!important;
+    transform: translateY(unset)!important;
+    position: absolute;
+    left: 0;
+    top: 0;
     display: block;
 }
 
@@ -181,7 +193,7 @@ header .header-bottom ul li ul li{
     padding: 0!important;
 }
 header .header-bottom ul li ul  li a{
-    color: #fff;
+    color: #fff!important;
 }
 
 header .header-bottom ul li ul li a:hover{
@@ -189,4 +201,50 @@ header .header-bottom ul li ul li a:hover{
 }
 header .header-bottom ul li ul li:nth-child(6){
     padding-left: 25px!important;
+}
+
+header .header-bottom ul li ul li:first-child{
+    box-shadow: none;
+}
+
+/* .fadeInAnimation{
+    animation: fadeIn 0.7s forwards!important;
+}
+
+@keyframes fadeIn{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: max-content!important;
+        display: inline-block;
+    }
+}
+
+.fadeOut{
+    animation: fadeOut 0.7s forwards;
+}
+
+@keyframes fadeOut{
+    0%{
+        height: max-content;
+    }
+    100%{ 
+    height: 0;
+    }
+} */
+
+
+@media only screen and (max-width: 300px){
+    header .header-bottom{
+        max-width: 230px;
+        overflow: hidden;
+    }
+    .header-bottom #header-top{
+        width: 100%!important;
+    }
+
+    .slide-headertop-forwards{
+        transform: translateX(236px);
+     }
 }

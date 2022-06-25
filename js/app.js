@@ -16,7 +16,7 @@ const closeSideNav = () => {
     icon.classList.remove("fa-bars", "fa-solid");
     icon.classList.add("fa-solid", "fa-xmark");
   } else {
-    navBoolean = false;
+    navBoolean = false
     nav.classList.add("side-nav-slide-backwards");
     nav.classList.remove("side-nav-slide-forwards");
     headerTop.classList.add("slide-headertop-backwards");
@@ -53,8 +53,8 @@ document.addEventListener("mouseup", function (e) {
     searchInput.classList.remove("fadeInAnimation");
   }
   // Closing side nav
-  if (!nav.contains(e.target)) {
-    navBoolean = false;
+  if (!nav.contains(e.target) && !icon.contains(e.target) && navBoolean) {
+    navBoolean = false
     nav.classList.add("side-nav-slide-backwards");
     nav.classList.remove("side-nav-slide-forwards");
     headerTop.classList.add("slide-headertop-backwards");
